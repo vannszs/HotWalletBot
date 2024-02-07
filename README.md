@@ -1,217 +1,114 @@
 ```markdown
-<!-- 🚀 HotWallet Wallet Automation Bot -->
-<a name="readme-top"></a>
+<h1 align="center">
+  <br>
+  <a href="https://github.com/your-username/your-repository"><img src="https://path/to/your/icon.png" alt="Your Bot" width="200"></a>
+  <br>
+  HotWallet Automation Bot
+  <br>
+</h1>
 
-<!--
-*** Feel free to customize this README template as per your project's needs.
-*** Thanks for checking out the Best-README-Template. If you have a suggestion
-*** that would make this better, please fork the repo and create a pull request
-*** or simply open an issue with the tag "enhancement".
-*** Don't forget to give the project a star!
-*** Thanks again! Now go create something AMAZING! :D
--->
+<h4 align="center">Automate your interactions with the HotWallet web application using this Python script powered by Selenium.</h4>
 
-<!-- PROJECT SHIELDS -->
-<!--
-*** I'm using markdown "reference style" links for readability.
-*** Reference links are enclosed in brackets [ ] instead of parentheses ( ).
-*** See the bottom of this document for the declaration of the reference variables
-*** for contributors-url, forks-url, etc. This is an optional, concise syntax you may use.
-*** https://www.markdownguide.org/basic-syntax/#reference-style-links
--->
-[![Contributors][contributors-shield]][contributors-url]
-[![Forks][forks-shield]][forks-url]
-[![Stargazers][stars-shield]][stars-url]
-[![Issues][issues-shield]][issues-url]
-[![MIT License][license-shield]][license-url]
-[![LinkedIn][linkedin-shield]][linkedin-url]
-
-<!-- PROJECT LOGO -->
-<br />
-<div align="center">
-  <a href="https://github.com/your_username/repo_name">
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
+<p align="center">
+  <a href="https://badge.fury.io/py/your-bot">
+    <img src="https://badge.fury.io/py/your-bot.svg"
+         alt="PyPI">
   </a>
+  <a href="https://gitter.im/your-username/your-repository"><img src="https://badges.gitter.im/your-username/your-repository.svg"></a>
+  <a href="https://www.paypal.me/your-username">
+    <img src="https://img.shields.io/badge/$-donate-ff69b4.svg?maxAge=2592000&amp;style=flat">
+  </a>
+</p>
 
-  <h3 align="center">HotWallet Wallet Automation Bot</h3>
+<p align="center">
+  <a href="#key-features">Key Features</a> •
+  <a href="#how-to-use">How To Use</a> •
+  <a href="#download">Download</a> •
+  <a href="#credits">Credits</a> •
+  <a href="#license">License</a>
+</p>
 
-  <p align="center">
-    An automated Python script using Selenium for HotWallet web application.
-    <br />
-    <a href="https://github.com/your_username/repo_name"><strong>Explore the docs »</strong></a>
-    <br />
-    <br />
-    <a href="https://github.com/your_username/repo_name">View Demo</a>
-    ·
-    <a href="https://github.com/your_username/repo_name/issues">Report Bug</a>
-    ·
-    <a href="https://github.com/your_username/repo_name/issues">Request Feature</a>
-  </p>
-</div>
+![screenshot](https://path/to/your/screenshot.gif)
 
-<!-- TABLE OF CONTENTS -->
-<details>
-  <summary>Table of Contents</summary>
-  <ol>
-    <li>
-      <a href="#about-the-project">About The Project</a>
-      <ul>
-        <li><a href="#built-with">Built With</a></li>
-      </ul>
-    </li>
-    <li>
-      <a href="#installation-and-setup">Installation and Setup</a>
-      <ul>
-        <li><a href="#cloning-the-repository">Cloning the Repository</a></li>
-        <li><a href="#python-and-libraries">Python and Libraries</a></li>
-        <li><a href="#browser-setup">Browser Setup</a></li>
-        <li><a href="#run-script">Run Script</a></li>
-      </ul>
-    </li>
-    <li><a href="#features">Features</a></li>
-    <li><a href="#license">License</a></li>
-    <li><a href="#contributing">Contributing</a></li>
-    <li><a href="#contact">Contact</a></li>
-    <li><a href="#acknowledgements">Acknowledgements</a></li>
-  </ol>
-</details>
+## Key Features
 
-<!-- ABOUT THE PROJECT -->
-## About The Project
+* LivePreview - Make changes, See changes
+  - Instantly see what your Markdown documents look like in HTML as you create them.
+* Sync Scrolling
+  - While you type, LivePreview will automatically scroll to the current location you're editing.
+* GitHub Flavored Markdown  
+* Syntax highlighting
+* [KaTeX](https://khan.github.io/KaTeX/) Support
+* Dark/Light mode
+* Toolbar for basic Markdown formatting
+* Supports multiple cursors
+* Save the Markdown preview as PDF
+* Emoji support in preview :tada:
+* App will keep alive in tray for quick usage
+* Full screen mode
+  - Write distraction free.
+* Cross platform
+  - Windows, macOS and Linux ready.
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
+## How To Use
 
-Automate your HotWallet experience! This script manages tasks like seed input, login, periodic checks, and automated claims based on specific conditions, leveraging Selenium's capabilities to manipulate the HotWallet web interface.
+To clone and run this application, you'll need [Git](https://git-scm.com) and [Python](https://www.python.org/) (which comes with [pip](https://pypi.org/project/pip/)) installed on your computer. From your command line:
 
-There are many great README templates available on GitHub; however, I didn't find one that really suited my needs, so I created this enhanced one. I want to create a README template so amazing that it'll be the last one you ever need -- I think this is it.
+```bash
+# Clone this repository
+$ git clone https://github.com/your-username/your-repository
 
-Here's why:
-* Your time should be focused on creating something amazing. A project that solves a problem and helps others
-* You shouldn't be doing the same tasks over and over like creating a README from scratch
-* You should implement DRY principles to the rest of your life :smile:
+# Go into the repository
+$ cd your-repository
 
-Of course, no one template will serve all projects since your needs may be different. So I'll be adding more in the near future. You may also suggest changes by forking this repo and creating a pull request or opening an issue. Thanks to all the people who have contributed to expanding this template!
+# Install dependencies
+$ pip install -r requirements.txt
 
-Use the `BLANK_README.md` to get started.
+# Run the script
+$ python your_script.py
+```
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+## Download
 
-### Built With
+You can [download](https://github.com/your-username/your-repository/releases/tag/v1.0.0) the latest installable version of Your Bot for Windows, macOS, and Linux.
 
-This section should list any major frameworks/libraries used to bootstrap your project. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
+## Emailware
 
-* [![Selenium][Selenium]](https://www.selenium.dev/)
-* [![Python][Python]](https://www.python.org/)
-* [![ChromeDriver][ChromeDriver]](https://sites.google.com/chromium.org/driver/)
+Your Bot is an [emailware](https://en.wiktionary.org/wiki/emailware). Meaning, if you liked using this script or it has helped you in any way, I'd appreciate it if you could send me an email at <your-email@example.com> about your thoughts. I'd love to hear from you!
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+## Credits
 
-<!-- INSTALLATION AND SETUP -->
-## Installation and Setup
+This script uses the following open source packages:
 
-This is an example of how you may give instructions on setting up your project locally.
-To get a local copy up and running, follow these simple example steps.
+- [Selenium](https://www.selenium.dev/)
+- [Python](https://www.python.org/)
+- [Your Favorite Library](https://path/to/your/favorite/library)
+- ...
 
-### Cloning the Repository
+## Related
 
-1. Clone the repo
-   ```sh
-   git clone https://github.com/your_username/repo_name.git
-   ```
+[Your Bot Web](https://github.com/your-username/your-web) - Web version of Your Bot
 
-### Python and Libraries
+## Support
 
-This script uses Python and requires the `selenium` library. If you haven't installed Python yet, you can download it [here](https://www.python.org/). Install the `selenium` library using the following command:
-   ```sh
-   pip install selenium
-   ```
+<a href="https://www.buymeacoffee.com/your-username" target="_blank"><img src="https://www.buymeacoffee.com/assets/img/custom_images/purple_img.png" alt="Buy Me A Coffee" style="height: 41px !important;width: 174px !important;box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;-webkit-box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;" ></a>
 
-### Browser Setup
+<p>Or</p> 
 
-Configure Chrome
+<a href="https://www.patreon.com/your-username">
+	<img src="https://c5.patreon.com/external/logo/become_a_patron_button@2x.png" width="160">
+</a>
 
-Driver and set its path in the `driver_path` variable within the script.
+## You may also like...
 
-### Run Script
+- [Your Another Project](https://github.com/your-username/your-another-project) - Another awesome project
+- [Another One](https://github.com/your-username/another-one) - Yet another awesome project
 
-Execute the Python script via terminal or command prompt.
-   ```sh
-   python your_script.py
-   ```
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- FEATURES -->
-## Features
-
-| Features               | Description                                                                                     |
-|------------------------|-------------------------------------------------------------------------------------------------|
-| 🌱 Seed Input           | Reads the seed from the `seed.txt` file. If the file is empty, prompts the user for input and saves it to `seed.txt`.                        |
-| 🌐 Initial Login        | Enters the seed, handles login, and navigates through the initial steps.                           |
-| 🔄 Periodic Check       | Periodically checks if the condition "Full" appears on a specific page. If true, waits for 2 hours before checking again.|
-| 🛒 Automated Claim     | Performs a series of automated clicks on specific elements based on predefined XPaths.               |
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- LICENSE -->
 ## License
 
-Distributed under the MIT License. See `LICENSE.txt` for more information.
+MIT
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+---
 
-<!-- CONTRIBUTING -->
-## Contributing
-
-Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
-
-If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement".
-Don't forget to give the project a star! Thanks again!
-
-1. Fork the Project
-2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the Branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- CONTACT -->
-## Contact
-
-Your Name - [@your_twitter](https://twitter.com/your_username) - email@example.com
-
-Project Link: [https://github.com/your_username/repo_name](https://github.com/your_username/repo_name)
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- ACKNOWLEDGMENTS -->
-## Acknowledgments
-
-Use this space to list resources you find helpful and would like to give credit to. I've included a few of my favorites to kick things off!
-
-* [Choose an Open Source License](https://choosealicense.com)
-* [GitHub Emoji Cheat Sheet](https://www.webpagefx.com/tools/emoji-cheat-sheet)
-* [GitHub Pages](https://pages.github.com)
-* [Font Awesome](https://fontawesome.com)
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- MARKDOWN LINKS & IMAGES -->
-<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/your_username/repo_name.svg?style=for-the-badge
-[contributors-url]: https://github.com/your_username/repo_name/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/your_username/repo_name.svg?style=for-the-badge
-[forks-url]: https://github.com/your_username/repo_name/network/members
-[stars-shield]: https://img.shields.io/github/stars/your_username/repo_name.svg?style=for-the-badge
-[stars-url]: https://github.com/your_username/repo_name/stargazers
-[issues-shield]: https://img.shields.io/github/issues/your_username/repo_name.svg?style=for-the-badge
-[issues-url]: https://github.com/your_username/repo_name/issues
-[license-shield]: https://img.shields.io/github/license/your_username/repo_name.svg?style=for-the-badge
-[license-url]: https://github.com/your_username/repo_name/blob/master/LICENSE.txt
-[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
-[linkedin-url]: https://linkedin.com/in/your_username
-[product-screenshot]: images/screenshot.png
-[Selenium]: https://img.shields.io/badge/Selenium-43B02A?style=for-the-badge&logo=selenium&logoColor=white
-[Python]: https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white
-[ChromeDriver]: https://img.shields.io/badge/ChromeDriver-1574F6?style=for-the
+> [your-website.com](https://www.your-website.com) &nbsp;&middot;&nbsp;
+> GitHub [@your-username](https://

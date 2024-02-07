@@ -10,7 +10,7 @@
 <h4 align="center">Automate your interactions with the HotWallet web application using this Python script powered by Selenium.</h4>
 
 
-![screenshot](https://ibb.co/y6qSHfp)
+![screenshot]<a href="https://ibb.co/y6qSHfp"><img src="https://i.ibb.co/Wkftmx0/Screenshot-2024-02-07-152813.png" alt="Screenshot-2024-02-07-152813" border="0"></a>
 
 ## Key Features
 

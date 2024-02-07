@@ -62,8 +62,6 @@ $ cd HotWalletBot
 # Install dependencies
 $ pip install selenium
 
-open seed.txt and create new line for more wallet
-
 # Run the script
 $ python your_script.py
 ```

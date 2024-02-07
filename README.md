@@ -1,7 +1,7 @@
-```markdown
+
 <h1 align="center">
   <br>
-  <a href="https://github.com/your-username/your-repository"><img src="https://path/to/your/icon.png" alt="Your Bot" width="200"></a>
+  <a href="https://github.com/your-username/your-repository"><img src="https://static.herewallet.app/intro.35bf1b5e.png" alt="Your Bot" width="200"></a>
   <br>
   HotWallet Automation Bot
   <br>
@@ -20,13 +20,6 @@
   </a>
 </p>
 
-<p align="center">
-  <a href="#key-features">Key Features</a> •
-  <a href="#how-to-use">How To Use</a> •
-  <a href="#download">Download</a> •
-  <a href="#credits">Credits</a> •
-  <a href="#license">License</a>
-</p>
 
 ![screenshot](https://path/to/your/screenshot.gif)
 

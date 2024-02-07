@@ -45,8 +45,10 @@ If you don't have Python installed on your Windows machine, follow these steps:
 
 - Open a new command prompt or PowerShell window.
 - Type the following command and press Enter:
-  ```bash
-  python --version
+  
+```bash
+python --version
+```
 
 ### 1. Setup Bot
 

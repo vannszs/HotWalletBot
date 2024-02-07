@@ -9,19 +9,8 @@
 
 <h4 align="center">Automate your interactions with the HotWallet web application using this Python script powered by Selenium.</h4>
 
-<p align="center">
-  <a href="https://badge.fury.io/py/your-bot">
-    <img src="https://badge.fury.io/py/your-bot.svg"
-         alt="PyPI">
-  </a>
-  <a href="https://gitter.im/your-username/your-repository"><img src="https://badges.gitter.im/your-username/your-repository.svg"></a>
-  <a href="https://www.paypal.me/your-username">
-    <img src="https://img.shields.io/badge/$-donate-ff69b4.svg?maxAge=2592000&amp;style=flat">
-  </a>
-</p>
 
-
-![screenshot](https://path/to/your/screenshot.gif)
+![screenshot](https://ibb.co/y6qSHfp)
 
 ## Key Features
 

@@ -21,11 +21,34 @@
 | 🌐 Initial Login        | Enters the seed, handles login, and navigates through the initial steps.                           |
 | 🔄 Periodic Check       | Periodically checks if the condition "Full" appears on a specific page. If true, waits for 2 hours before checking again.|
 | 🛒 Automated Claim     | Performs a series of automated clicks on specific elements based on predefined XPaths.               |
+| 🌐 Multi-Wallet Support | Supports multiple wallets by reading seeds from separate `seed.txt`, and so on. Prompts user input if the file is empty. |
+
 
 
 ## 🚀 How To Use
 
-To clone and run this application, you'll need [Git](https://git-scm.com) and [Python](https://www.python.org/) (which comes with [pip](https://pypi.org/project/pip/)) installed on your computer. From your command line:
+### 1. Install Python
+
+If you don't have Python installed on your Windows machine, follow these steps:
+
+#### a. Download Python Installer
+
+- Visit the [official Python website](https://www.python.org/downloads/release) and download the latest version of Python for Windows.
+
+#### b. Run Python Installer
+
+- Run the downloaded installer.
+- Make sure to check the box that says "Add Python to PATH" during the installation process.
+- Click "Install Now" to start the installation.
+
+#### c. Verify Installation
+
+- Open a new command prompt or PowerShell window.
+- Type the following command and press Enter:
+  ```bash
+  python --version
+
+### 1. Setup Bot
 
 ```bash
 # Clone this repository
@@ -37,9 +60,12 @@ $ cd HotWalletBot
 # Install dependencies
 $ pip install selenium
 
+open seed.txt and create new line for more wallet
+
 # Run the script
 $ python your_script.py
 ```
+open `seed.txt` and create new line for more wallet
 
 > **Note**
 > If you're using Linux Bash for Windows, [see this guide](https://www.howtogeek.com/261575/how-to-run-graphical-linux-desktop-applications-from-windows-10s-bash-shell/) or use `node` from the command prompt.

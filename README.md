@@ -5,7 +5,7 @@
   HotWallet Automation Bot
   <br>
   <br>
-  NEW VERSION RELEASE, 
+  NEW VERSION IN DEVELOPMENT
 </h1>
 
 <h4 align="center">Automate your interactions with the HotWallet web application using this Python script powered by Selenium.</h4>

@@ -4,6 +4,7 @@
   <br>
   HotWallet Automation Bot
   <br>
+  <br>
   BUG PATCHED, THIS BOT DOESNT WORK ANYMORE, STAY FOR NEXT UPDATE
 </h1>
 

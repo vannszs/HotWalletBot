@@ -4,6 +4,8 @@
   <br>
   HotWallet Automation Bot
   <br>
+  <br>
+  BUG PATCHED, THIS BOT DOESNT WORK ANYMORE, STAY FOR NEXT UPDATE
 </h1>
 
 <h4 align="center">Automate your interactions with the HotWallet web application using this Python script powered by Selenium.</h4>

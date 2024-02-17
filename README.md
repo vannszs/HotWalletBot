@@ -23,7 +23,7 @@
 | 🌐 Initial Login        | handles login, and navigates through the initial steps.                           |
 | 🔄 Periodic Check       | Periodically checks if the condition "Full" appears on a specific page. If true, waits for 8 hours before checking again.|
 | 🛒 Automated Claim     | Performs a series of automated clicks on specific elements based on predefined XPaths.               |
-| 🌐 ``Multi-Wallet Support`` | ``Supports multiple wallets by reading seeds from separate `seed.txt`, and so on. Prompts user input if the file is empty.`` (Patched By DEV) |
+| 🌐 ___Multi-Wallet Support___ | ``Supports multiple wallets by reading seeds from separate `seed.txt`, and so on. Prompts user input if the file is empty.`` (Patched By DEV) |
 
 
 

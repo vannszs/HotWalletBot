@@ -90,9 +90,10 @@ def claim():
                 # Hitung total waktu dalam menit
                 total_waktu = sum(int(value) * (60 if unit == 'h' else 1) for value, unit in matches)
                 timee = random.randint(10,30)
-                if total_waktu < timee:
+                fill = waktu_element.text
+                if total_waktu < timee or "Filled" in fill:
                     break
-                print(f"Wait {total_waktu} Minutes For Next Claim")
+                print(f"Wait {total_waktu} Minutes For Next Claim, dont close the bot")
                 time.sleep(int(total_waktu * 60))
                 break
             except:

@@ -5,7 +5,7 @@
   HotWallet Automation Bot
   <br>
   <br>
-  BUG PATCHED, THIS BOT DOESNT WORK ANYMORE, STAY FOR NEXT UPDATE
+  NEW VERSION RELEASE
 </h1>
 
 <h4 align="center">Automate your interactions with the HotWallet web application using this Python script powered by Selenium.</h4>
@@ -19,11 +19,11 @@
 
 | Features               | Description                                                                                     |
 |------------------------|-------------------------------------------------------------------------------------------------|
-| 🌱 Seed Input           | Reads the seed from the `seed.txt` file. If the file is empty, prompts the user for input and saves it to `seed.txt`.                        |
-| 🌐 Initial Login        | Enters the seed, handles login, and navigates through the initial steps.                           |
-| 🔄 Periodic Check       | Periodically checks if the condition "Full" appears on a specific page. If true, waits for 2 hours before checking again.|
+| 🌱 Telegram Login           | New version coming with telegram login.                        |
+| 🌐 Initial Login        | handles login, and navigates through the initial steps.                           |
+| 🔄 Periodic Check       | Periodically checks if the condition "Full" appears on a specific page. Then claim it, waits for 8 hours before checking again.|
 | 🛒 Automated Claim     | Performs a series of automated clicks on specific elements based on predefined XPaths.               |
-| 🌐 Multi-Wallet Support | Supports multiple wallets by reading seeds from separate `seed.txt`, and so on. Prompts user input if the file is empty. |
+| 🌐 ~~Multi-Wallet Support~~ | ~~Supports multiple wallets by reading seeds from separate `seed.txt`, and so on. Prompts user input if the file is empty.~~ (Patched By DEV) |
 
 
 
@@ -67,7 +67,6 @@ $ pip install selenium
 # Run the script
 $ python your_script.py
 ```
-open `seed.txt` and create new line for more wallet
 
 > **Note**
 > If you're using Linux Bash for Windows, [see this guide](https://www.howtogeek.com/261575/how-to-run-graphical-linux-desktop-applications-from-windows-10s-bash-shell/) or use `node` from the command prompt.

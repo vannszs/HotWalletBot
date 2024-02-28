@@ -15,7 +15,7 @@ driver_path = "path/to/chromedriver"
 
 # Set up Chrome options
 chrome_options = webdriver.ChromeOptions()
-session_path = "D:/selenium"
+session_path = "C:/selenium"
 chrome_options = webdriver.ChromeOptions()
 chrome_options.add_argument(f"user-data-dir={session_path}")
 chrome_options.add_argument("--headless")
@@ -63,6 +63,10 @@ def login():
 
 def action():
     try:
+        url = 'https://web.telegram.org/k/#@herewalletbot'
+        driver.get(url)
+        driver.get(url)
+        time.sleep(3)
         input_text_xpath = '/html/body/div[1]/div/div[2]/div/div/div[4]/div/div[1]/div/div[8]/div[2]/div[1]'
         element_input_text = wait.until(EC.presence_of_element_located((By.XPATH, input_text_xpath)))
         element_input_text.send_keys("/start")
@@ -111,9 +115,7 @@ def claim():
         error()
 
 def iframe():
-
-
-
+    time.sleep(3)
     try:
         popup_body = WebDriverWait(driver, 10).until(
             EC.presence_of_element_located((By.CLASS_NAME, "popup-body"))
@@ -140,6 +142,7 @@ def iframe():
     except:
         print("Got an error in def iframe, Please Login To Your HotWallet First the restart the bot \n")
         input()
+        error()
 
 
 
@@ -147,9 +150,7 @@ def error():
     url = 'https://web.telegram.org/k/#@herewalletbot'
     driver.get(url)
     driver.refresh
-    login()
 
 if __name__ == "__main__":
-    
     while True:
         login()

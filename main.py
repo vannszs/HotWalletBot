@@ -14,9 +14,9 @@ import re
 # Path to the ChromeDriver
 driver_path = "path/to/chromedriver"
 
-# Set up Chrome options
+# Set up Chrome option
 chrome_options = webdriver.ChromeOptions()
-session_path = "D:/selenium2"
+session_path = "D:/selenium2" 
 chrome_options.add_argument(f"user-data-dir={session_path}")
 chrome_options.add_argument("--headless")
 chrome_options.add_argument("--log-level=3")  # Set log level to suppress INFO and WARNING messages

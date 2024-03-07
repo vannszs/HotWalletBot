@@ -7,21 +7,22 @@ from selenium.webdriver.common.keys import Keys
 from PIL import Image
 import base64
 import io
-import re
+import qrcode
 import random
+import re
 
 # Path to the ChromeDriver
 driver_path = "path/to/chromedriver"
 
 # Set up Chrome options
 chrome_options = webdriver.ChromeOptions()
-session_path = "D:/selenium"
-chrome_options = webdriver.ChromeOptions()
-chrome_options.add_argument(f"user-data-dir={session_path}")
-chrome_options.add_argument("--headless")
+# session_path = "D:/selenium2"
+# chrome_options.add_argument(f"user-data-dir={session_path}")
+# chrome_options.add_argument("--headless")
 chrome_options.add_argument("--log-level=3")  # Set log level to suppress INFO and WARNING messages
 chrome_options.add_argument("--disable-logging")
 chrome_options.add_argument("--mute-audio")
+chrome_options.add_argument("--incognito")  
 
 # Initialize WebDriver
 driver = webdriver.Chrome(options=chrome_options)
@@ -34,26 +35,52 @@ driver.get(url)
 
 wait = WebDriverWait(driver, 10)
 
+def display_qrcode(data):
+    qr = qrcode.QRCode(
+        version=1,
+        error_correction=qrcode.constants.ERROR_CORRECT_L,
+        box_size=10,
+        border=4,
+    )
+    qr.add_data(data)
+    qr.make(fit=True)
+
+    img = qr.make_image(fill_color="black", back_color="white")
+    img.show()
+
+# login 
+# /html/body/div[2]/div/div[2]/div/div/button
+# /html/body/div[2]/div/div[1]/div/div/form/div[1]/div[2]/div[2]/div[2]
+# nomer
+# /html/body/div[2]/div/div[1]/div/div/form/div[2]/input
+# next
+# /html/body/div[2]/div/div[1]/div/div/form/button[1]
+
+# patern 
+# /html/body/div[2]/div/div[1]/div/div/p
+
+# otp
+# /html/body/div[2]/div/div[1]/div/div/div[2]/input
+
 def login():
-    last_qr_content = None
     first = False
     while True:
         try:
-            login_header = wait.until(EC.presence_of_element_located((By.XPATH, '//*[@id="auth-pages"]/div/div[2]/div[3]/div/h4')))
-            canvas_element = wait.until(EC.presence_of_element_located((By.XPATH, '/html/body/div[1]/div/div[2]/div[3]/div/div[1]/canvas')))
-            canvas_content_base64 = driver.execute_script("return arguments[0].toDataURL('image/png').substring(21);", canvas_element)
-
-            if canvas_content_base64 != last_qr_content:
-                print("Please Login With The QR")
-                if first:
-                    img.close()
-
-                image_content = base64.b64decode(canvas_content_base64)
-                img = Image.open(io.BytesIO(image_content))
-                img.show()
-
-                last_qr_content = canvas_content_base64
-                first = True
+            login = wait.until(EC.element_to_be_clickable((By.XPATH, '//*[@id="auth-pages"]/div/div[2]/div[3]/div/div[2]/button'))).click()
+            time.sleep(5)
+            nomer = wait.until(EC.element_to_be_clickable((By.XPATH, '//*[@id="auth-pages"]/div/div[2]/div[2]/div/div[3]/div[2]/div[1]')))
+            nomeruser = 85381568989
+            nomer.send_keys(nomeruser)
+            wait.until(EC.element_to_be_clickable((By.XPATH, '//*[@id="auth-pages"]/div/div[2]/div[2]/div/div[3]/button[1]'))).click()
+            while True:
+                try:
+                    textt = wait.until(EC.element_to_be_clickable((By.XPATH, '//*[@id="auth-pages"]/div/div[2]/div[4]/div/p/span')))
+                    break
+                except:
+                    print("Please Wait")
+            otp = wait.until(EC.element_to_be_clickable((By.XPATH, '//*[@id="auth-pages"]/div/div[2]/div[4]/div/div[3]/div/input')))
+            otpmu = input("input your otp : ")
+            otp.send_keys(otpmu)
         except Exception as e:
             if first:
                 driver.get(url)
@@ -61,8 +88,13 @@ def login():
             action()
             break
 
+
 def action():
     try:
+        url = 'https://web.telegram.org/k/#@herewalletbot'
+        driver.get(url)
+        driver.get(url)
+        time.sleep(3)
         input_text_xpath = '/html/body/div[1]/div/div[2]/div/div/div[4]/div/div[1]/div/div[8]/div[2]/div[1]'
         element_input_text = wait.until(EC.presence_of_element_located((By.XPATH, input_text_xpath)))
         element_input_text.send_keys("/start")
@@ -111,9 +143,7 @@ def claim():
         error()
 
 def iframe():
-
-
-
+    time.sleep(3)
     try:
         popup_body = WebDriverWait(driver, 10).until(
             EC.presence_of_element_located((By.CLASS_NAME, "popup-body"))
@@ -140,6 +170,7 @@ def iframe():
     except:
         print("Got an error in def iframe, Please Login To Your HotWallet First the restart the bot \n")
         input()
+        error()
 
 
 
@@ -147,9 +178,7 @@ def error():
     url = 'https://web.telegram.org/k/#@herewalletbot'
     driver.get(url)
     driver.refresh
-    login()
 
 if __name__ == "__main__":
-    
     while True:
         login()

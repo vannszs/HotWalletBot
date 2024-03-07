@@ -16,9 +16,9 @@ driver_path = "path/to/chromedriver"
 
 # Set up Chrome options
 chrome_options = webdriver.ChromeOptions()
-# session_path = "D:/selenium2"
-# chrome_options.add_argument(f"user-data-dir={session_path}")
-# chrome_options.add_argument("--headless")
+session_path = "D:/selenium2"
+chrome_options.add_argument(f"user-data-dir={session_path}")
+chrome_options.add_argument("--headless")
 chrome_options.add_argument("--log-level=3")  # Set log level to suppress INFO and WARNING messages
 chrome_options.add_argument("--disable-logging")
 chrome_options.add_argument("--mute-audio")
@@ -35,32 +35,6 @@ driver.get(url)
 
 wait = WebDriverWait(driver, 10)
 
-def display_qrcode(data):
-    qr = qrcode.QRCode(
-        version=1,
-        error_correction=qrcode.constants.ERROR_CORRECT_L,
-        box_size=10,
-        border=4,
-    )
-    qr.add_data(data)
-    qr.make(fit=True)
-
-    img = qr.make_image(fill_color="black", back_color="white")
-    img.show()
-
-# login 
-# /html/body/div[2]/div/div[2]/div/div/button
-# /html/body/div[2]/div/div[1]/div/div/form/div[1]/div[2]/div[2]/div[2]
-# nomer
-# /html/body/div[2]/div/div[1]/div/div/form/div[2]/input
-# next
-# /html/body/div[2]/div/div[1]/div/div/form/button[1]
-
-# patern 
-# /html/body/div[2]/div/div[1]/div/div/p
-
-# otp
-# /html/body/div[2]/div/div[1]/div/div/div[2]/input
 
 def login():
     first = False

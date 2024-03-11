@@ -18,7 +18,7 @@ driver_path = "path/to/chromedriver"
 chrome_options = webdriver.ChromeOptions()
 session_path = "D:/selenium" ## Change this with your path
 chrome_options.add_argument(f"user-data-dir={session_path}")
-chrome_options.add_argument("--headless")
+# chrome_options.add_argument("--headless")
 chrome_options.add_argument("--log-level=3")  # Set log level to suppress INFO and WARNING messages
 chrome_options.add_argument("--disable-logging")
 chrome_options.add_argument("--mute-audio")
@@ -137,7 +137,7 @@ def iframe():
         except:
             pass
 
-        element_to_wait = wait.until(EC.presence_of_element_located((By.XPATH, '//*[@id="root"]/div/div/div/div[4]/div[2]/div/div[2]')))
+        element_to_wait = wait.until(EC.presence_of_element_located((By.XPATH, '//*[@id="root"]/div/div/div/div[5]/div')))
         element_to_wait.click()
         print("Process 2 Success")
         claim()

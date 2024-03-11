@@ -16,13 +16,13 @@ driver_path = "path/to/chromedriver"
 
 # Set up Chrome option
 chrome_options = webdriver.ChromeOptions()
-session_path = "D:/selenium2" 
+session_path = "D:/selenium" ## Change this with your path
 chrome_options.add_argument(f"user-data-dir={session_path}")
 chrome_options.add_argument("--headless")
 chrome_options.add_argument("--log-level=3")  # Set log level to suppress INFO and WARNING messages
 chrome_options.add_argument("--disable-logging")
 chrome_options.add_argument("--mute-audio")
-chrome_options.add_argument("--incognito")  
+# chrome_options.add_argument("--incognito")  
 
 # Initialize WebDriver
 driver = webdriver.Chrome(options=chrome_options)
@@ -43,7 +43,7 @@ def login():
             login = wait.until(EC.element_to_be_clickable((By.XPATH, '//*[@id="auth-pages"]/div/div[2]/div[3]/div/div[2]/button'))).click()
             time.sleep(5)
             nomer = wait.until(EC.element_to_be_clickable((By.XPATH, '//*[@id="auth-pages"]/div/div[2]/div[2]/div/div[3]/div[2]/div[1]')))
-            nomeruser = 85381568989
+            nomeruser = input("enter your phone number without country code")
             nomer.send_keys(nomeruser)
             wait.until(EC.element_to_be_clickable((By.XPATH, '//*[@id="auth-pages"]/div/div[2]/div[2]/div/div[3]/button[1]'))).click()
             while True:
@@ -73,9 +73,9 @@ def action():
         element_input_text = wait.until(EC.presence_of_element_located((By.XPATH, input_text_xpath)))
         element_input_text.send_keys("/start")
         element_input_text.send_keys(Keys.ENTER)
-        element_to_click_2 = wait.until(EC.element_to_be_clickable((By.XPATH, '/html/body/div[1]/div/div[2]/div[1]/div/div[3]/div[2]/div[2]/section/div[13]/div/div/div[2]/div[3]/a/div')))
+        element_to_click_2 = wait.until(EC.element_to_be_clickable((By.XPATH, '//*[@id="column-center"]/div/div/div[3]/div[2]/div[2]/section/div[13]/div/div/div[2]/div[3]')))
         element_to_click_2.click()
-        element_to_click_3 = wait.until(EC.element_to_be_clickable((By.XPATH, '/html/body/div[7]/div/div[2]/button[1]')))
+        element_to_click_3 = wait.until(EC.element_to_be_clickable((By.XPATH, '/html/body/div[7]/div/div[2]/button[1]/div')))
         element_to_click_3.click()
         print("Process 1 Success")
         iframe()
@@ -137,7 +137,7 @@ def iframe():
         except:
             pass
 
-        element_to_wait = wait.until(EC.presence_of_element_located((By.XPATH, '/html/body/div[1]/div/div/div/div[3]/div[2]')))
+        element_to_wait = wait.until(EC.presence_of_element_located((By.XPATH, '//*[@id="root"]/div/div/div/div[4]/div[2]/div/div[2]')))
         element_to_wait.click()
         print("Process 2 Success")
         claim()

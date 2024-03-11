@@ -63,7 +63,6 @@ $ cd HotWalletBot
 
 # Install dependencies
 $ pip install selenium
-$ pip install Pillow
 
 # Run the script
 $ python your_script.py

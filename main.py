@@ -81,7 +81,7 @@ def action():
         iframe()
     except Exception as e:
         print("Got an error in def action, retry \n")
-        error()
+        return
 
 def claim():
     try:
@@ -152,6 +152,7 @@ def error():
     url = 'https://web.telegram.org/k/#@herewalletbot'
     driver.get(url)
     driver.refresh
+    login()
 
 if __name__ == "__main__":
     while True:

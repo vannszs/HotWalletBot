@@ -18,7 +18,7 @@ driver_path = "path/to/chromedriver"
 chrome_options = webdriver.ChromeOptions()
 session_path = "D:/selenium" ## Change this with your path
 chrome_options.add_argument(f"user-data-dir={session_path}")
-# chrome_options.add_argument("--headless")
+chrome_options.add_argument("--headless")
 chrome_options.add_argument("--log-level=3")  # Set log level to suppress INFO and WARNING messages
 chrome_options.add_argument("--disable-logging")
 chrome_options.add_argument("--mute-audio")
